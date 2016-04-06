@@ -31,17 +31,4 @@ function solveSudoku() {
 	submits[0].click();// how am I doing?
 }
 
-function getNewGame() {
-	//wait for a bit
-	console.log("New game");
-	var newGameSubmits = document.getElementsByName("newgame");
-	console.log("first "+newGameSubmits[0]);
-	newGameSubmits[0].click();
-}
-setTimeout(getNewGame, 1200);
-setTimeout(solveSudoku,10);
-console.log("bitch");
-
-
-
-
+solveSudoku();
